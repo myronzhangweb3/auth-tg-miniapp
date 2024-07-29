@@ -36,6 +36,19 @@ Before you start, make sure you have already created a Telegram Bot. Here is
 a [comprehensive guide](https://docs.telegram-mini-apps.com/platform/creating-new-app) on how to
 do it.
 
+## Create Particle App
+
+You need create a Particle-Telegram app on [Dashboard](https://dashboard.particle.network/), and get the config from project information.   
+
+Create `.env` file in the root directory and replace the `xxx`.   
+
+```
+NEXT_PUBLIC_PROJECT_ID='xxx'
+NEXT_PUBLIC_CLIENT_KEY='xxx'
+NEXT_PUBLIC_APP_ID='xxx'
+```
+
+
 ## Run
 
 Although Mini Apps are designed to be opened
