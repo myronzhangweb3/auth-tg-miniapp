@@ -38,16 +38,15 @@ do it.
 
 ## Create Particle App
 
-You need create a Particle-Telegram app on [Dashboard](https://dashboard.particle.network/), and get the config from project information.   
+You need create a Particle-Telegram app on [Dashboard](https://dashboard.particle.network/), and get the config from project information.
 
-Create `.env` file in the root directory and replace the `xxx`.   
+Create `.env` file in the root directory and replace the `xxx`.
 
 ```
 NEXT_PUBLIC_PROJECT_ID='xxx'
 NEXT_PUBLIC_CLIENT_KEY='xxx'
 NEXT_PUBLIC_APP_ID='xxx'
 ```
-
 
 ## Run
 
@@ -107,7 +106,6 @@ $ pnpm run dev:https
 Visiting the `Local` link (`https://localhost:3000` in this example) in your
 browser, you will see the following warning.
 
-
 This browser warning is normal and can be safely ignored as long as the site is secure. Click
 the `Proceed to localhost (unsafe)` button to continue and view the application.
 
@@ -115,7 +113,6 @@ Once the application is displayed correctly, submit this link as the Mini App li
 to [@BotFather](https://t.me/botfather). Then, navigate
 to [https://web.telegram.org/k/](https://web.telegram.org/k/), find your bot, and launch the
 Telegram Mini App. This approach provides the full development experience.
-
 
 ## Deploy
 

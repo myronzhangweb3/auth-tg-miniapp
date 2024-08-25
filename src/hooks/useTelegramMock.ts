@@ -32,20 +32,20 @@ export function useTelegramMock(): void {
         [
           'user',
           JSON.stringify({
-            id: 99281932,
-            first_name: 'Andrew',
-            last_name: 'Rogue',
-            username: 'rogue',
-            language_code: 'en',
-            is_premium: true,
+            id: 5276611418,
+            first_name: 'Myron',
+            last_name: 'Zhang',
+            username: 'myronzhangweb3',
+            language_code: 'zh-hans',
+            // is_premium: false,
             allows_write_to_pm: true,
           }),
         ],
-        ['hash', '89d6079ad6762351f38c6dbbc41bb53048019256a9443988af7a48bcad16ba31'],
-        ['auth_date', '1716922846'],
-        ['start_param', 'debug'],
+        ['hash', '66ec97e10add74b03ffb7a4a5266e3337814ca519bf3ab1fc94e91dc87c3e924'],
+        ['auth_date', '1724580646'],
+        // ['start_param', 'debug'],
         ['chat_type', 'sender'],
-        ['chat_instance', '8428209589180549439'],
+        ['chat_instance', '-6348001789302836739'],
       ]).toString();
 
       mockTelegramEnv({
