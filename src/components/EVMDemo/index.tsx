@@ -1,13 +1,13 @@
-import { messageValue, typedDataValue } from '@/config';
-import { erc4337Config } from '@/config/erc4337';
-import { useAppContext } from '@/context';
-import { shortString } from '@/utils';
-import { Select, SelectItem } from '@nextui-org/react';
-import { SignTypedDataVersion } from '@particle-network/auth-core';
-import { useCustomize, useEthereum } from '@particle-network/auth-core-modal';
-import { chains, type ChainInfo } from '@particle-network/chains';
-import { useEffect, useMemo } from 'react';
-import { toast } from 'sonner';
+import {messageValue, typedDataValue} from '@/config';
+import {erc4337Config} from '@/config/erc4337';
+import {useAppContext} from '@/context';
+import {shortString} from '@/utils';
+import {Select, SelectItem} from '@nextui-org/react';
+import {SignTypedDataVersion} from '@particle-network/auth-core';
+import {useCustomize, useEthereum} from '@particle-network/auth-core-modal';
+import {type ChainInfo, chains} from '@particle-network/chains';
+import {useEffect, useMemo} from 'react';
+import {toast} from 'sonner';
 import MenuItem from '../MenuItem';
 
 const EVMDemo = () => {
@@ -27,6 +27,8 @@ const EVMDemo = () => {
   const onSignMessage = async () => {
     try {
       const result = await signMessage(messageValue);
+      console.log('signMessage result', result);
+      alert("Sign Message Success! Signature: " + result);
       toast.success(`Sign Message Success! Signature: ${shortString(result)}`);
     } catch (error: any) {
       console.log('signMessage error', error);
