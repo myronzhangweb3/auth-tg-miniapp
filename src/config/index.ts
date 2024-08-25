@@ -1,4 +1,4 @@
-export const messageValue = `https://particle.network`;
+export const messageValue = 'https://particle.network';
 
 export const typedDataValue = {
   types: {
