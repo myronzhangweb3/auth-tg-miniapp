@@ -1,8 +1,4 @@
-export const messageValue = `Hello Particle Network!💰💰💰 
-
-The fastest path from ideas to deployment in a single workflow for high performance dApps. 
-
-https://particle.network`;
+export const messageValue = `https://particle.network`;
 
 export const typedDataValue = {
   types: {
